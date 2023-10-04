@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HT", "HT.csproj", "{66D6DE3A-F263-464D-B93E-1D165A355C83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TymakovLab", "TymakovLab\TymakovLab.csproj", "{72C8EBD7-82DA-4990-A237-5AC8ECB3A98A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66D6DE3A-F263-464D-B93E-1D165A355C83}.Debug|x86.ActiveCfg = Debug|x86
+		{66D6DE3A-F263-464D-B93E-1D165A355C83}.Debug|x86.Build.0 = Debug|x86
+		{66D6DE3A-F263-464D-B93E-1D165A355C83}.Release|x86.ActiveCfg = Release|x86
+		{66D6DE3A-F263-464D-B93E-1D165A355C83}.Release|x86.Build.0 = Release|x86
+		{72C8EBD7-82DA-4990-A237-5AC8ECB3A98A}.Debug|x86.ActiveCfg = Debug|x86
+		{72C8EBD7-82DA-4990-A237-5AC8ECB3A98A}.Debug|x86.Build.0 = Debug|x86
+		{72C8EBD7-82DA-4990-A237-5AC8ECB3A98A}.Release|x86.ActiveCfg = Release|x86
+		{72C8EBD7-82DA-4990-A237-5AC8ECB3A98A}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+EndGlobal
