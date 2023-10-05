@@ -59,7 +59,7 @@ namespace HT
             "#  #\n" +
             " ###\n" +
             "   #\n" +
-            " ## \n";
+            " ## ";
 
         static string[] SWEARS = { "ебан", "ёбан", "елбан", "ёблан", "ебат", "ёбат",
              "хуй", "хуе", "гандон", "пизд", "сук", "суч", "чмо",
@@ -129,7 +129,8 @@ namespace HT
             {
                 if (char.IsLetter(ch))
                 {
-                    throw new InvalidOperationException("There is no such case!");
+                    34
+                        2throw new InvalidOperationException("There is no such case!");
                 }
 
             }
@@ -275,7 +276,7 @@ namespace HT
                     Console.WriteLine("Type a digit or \"exit\" |" +
                     	" \"закрыть\" to stop");
                     Offer();
-                    string input = Console.ReadLine().ToLower();
+                    string input = Console.ReadLine().ToLower().Trim();
                     switch (input)
                     {
                         case "0": Console.WriteLine(ZERO); break;

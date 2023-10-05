@@ -4,3 +4,10 @@
 /home/rokoko/Projects/KPFU/KPFU_CS_HT_4/HT/TymakovLab/obj/x86/Debug/TymakovLab.csproj.CoreCompileInputs.cache
 /home/rokoko/Projects/KPFU/KPFU_CS_HT_4/HT/TymakovLab/obj/x86/Debug/TymakovLab.exe
 /home/rokoko/Projects/KPFU/KPFU_CS_HT_4/HT/TymakovLab/obj/x86/Debug/TymakovLab.pdb
+C:\Users\xzrok\Source\Repos\rokokol\KPFU_CS_HT_4\HT\TymakovLab\bin\Debug\TymakovLab.exe.config
+C:\Users\xzrok\Source\Repos\rokokol\KPFU_CS_HT_4\HT\TymakovLab\bin\Debug\TymakovLab.exe
+C:\Users\xzrok\Source\Repos\rokokol\KPFU_CS_HT_4\HT\TymakovLab\bin\Debug\TymakovLab.pdb
+C:\Users\xzrok\Source\Repos\rokokol\KPFU_CS_HT_4\HT\TymakovLab\obj\x86\Debug\TymakovLab.csproj.AssemblyReference.cache
+C:\Users\xzrok\Source\Repos\rokokol\KPFU_CS_HT_4\HT\TymakovLab\obj\x86\Debug\TymakovLab.csproj.CoreCompileInputs.cache
+C:\Users\xzrok\Source\Repos\rokokol\KPFU_CS_HT_4\HT\TymakovLab\obj\x86\Debug\TymakovLab.exe
+C:\Users\xzrok\Source\Repos\rokokol\KPFU_CS_HT_4\HT\TymakovLab\obj\x86\Debug\TymakovLab.pdb
