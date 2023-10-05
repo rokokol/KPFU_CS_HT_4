@@ -1,12 +1,30 @@
 ﻿<Properties StartupConfiguration="{72C8EBD7-82DA-4990-A237-5AC8ECB3A98A}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="TymakovLab/Program.cs">
     <Files>
-      <File FileName="Program.cs" Line="1" Column="1" />
-      <File FileName="TymakovLab/Program.cs" Line="1" Column="1" />
+      <File FileName="TymakovLab/Program.cs" Line="114" Column="22" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HT" expanded="True">
+            <Node name="HT" expanded="True">
+              <Node name="References" expanded="True" />
+            </Node>
+            <Node name="TymakovLab" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>a / b</Value>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.HT FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.TymakovLab FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.TymakovLab PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
