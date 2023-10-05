@@ -1,7 +1,7 @@
-﻿<Properties StartupConfiguration="{72C8EBD7-82DA-4990-A237-5AC8ECB3A98A}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="TymakovLab/Program.cs">
+﻿<Properties StartupConfiguration="{66D6DE3A-F263-464D-B93E-1D165A355C83}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
-      <File FileName="TymakovLab/Program.cs" Line="114" Column="22" />
+      <File FileName="Program.cs" Line="111" Column="24" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -9,21 +9,24 @@
           <Node name="HT" expanded="True">
             <Node name="HT" expanded="True">
               <Node name="References" expanded="True" />
-            </Node>
-            <Node name="TymakovLab" expanded="True">
               <Node name="Program.cs" selected="True" />
             </Node>
+            <Node name="TymakovLab" expanded="True" />
           </Node>
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State>
-          <Value>a / b</Value>
+          <Value>result[i]</Value>
+          <Value>sum</Value>
+          <Value>sum.ToString().Length</Value>
+          <Value>result[i].ToString().Length</Value>
+          <Value>result[i+1]</Value>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.HT FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.HT PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.TymakovLab PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />

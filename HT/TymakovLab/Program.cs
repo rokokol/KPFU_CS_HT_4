@@ -128,14 +128,20 @@ namespace Tymakov
             {
                 Message("retusns the biggest number");
                 Console.WriteLine("Please, enter two numbers. Separate them by ENTER key:");
-                Console.WriteLine($"The biggest number is: {Max(ReadInt(false), ReadInt(false))}");
+                Console.WriteLine("First:");
+                int a = ReadInt(false);
+                Console.WriteLine("Second:");
+                int b = ReadInt(false);
+                Console.WriteLine($"The biggest number is: {Max(a, b)}");
             }
 
             void ProblemLab5_2()
             {
                 Message("swaps to numbers via their references");
-                Console.WriteLine("Please, enter two numbers. Separate them by ENTER key:");
+                Console.WriteLine("Please, enter two numbers. Separate them by ENTER key");
+                Console.WriteLine("First:");
                 int a = ReadInt(false);
+                Console.WriteLine("Second:");
                 int b = ReadInt(false);
                 Console.WriteLine($"a: {a}, b: {b}");
                 Console.WriteLine("Swap...");
@@ -175,8 +181,11 @@ namespace Tymakov
             {
                 Message("tests function to find a GCD of three numbers");
                 Console.WriteLine("Please, enter three numbers. Separate them by ENTER key:");
+                Console.WriteLine("First:");
                 int a = ReadInt(true);
+                Console.WriteLine("Second:");
                 int b = ReadInt(true);
+                Console.WriteLine("Third:");
                 int c = ReadInt(true);
                 Console.WriteLine($"The GCD of {a}, {b}, {c} is: {Gcd(a, b, c)}");
             }
@@ -196,7 +205,7 @@ namespace Tymakov
             }
 
             Console.WriteLine("Please, input \"HT\", if you want to check the HT solutions");
-            string input = "HT";
+            string input = Console.ReadLine();
 
             if (input.Equals("HT") || input.Equals("НТ"))
             {
@@ -210,6 +219,7 @@ namespace Tymakov
                 ProblemLab5_3();
                 ProblemLab5_4();
             }
+
             Console.WriteLine("That is all. Press any key to continue...");
             Console.ReadKey();
         }
