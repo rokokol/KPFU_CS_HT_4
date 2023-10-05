@@ -1,7 +1,8 @@
 ﻿<Properties StartupConfiguration="{66D6DE3A-F263-464D-B93E-1D165A355C83}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TymakovLab/Program.cs">
     <Files>
-      <File FileName="Program.cs" Line="111" Column="24" />
+      <File FileName="Program.cs" Line="333" Column="68" />
+      <File FileName="TymakovLab/Program.cs" Line="222" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -9,9 +10,10 @@
           <Node name="HT" expanded="True">
             <Node name="HT" expanded="True">
               <Node name="References" expanded="True" />
+            </Node>
+            <Node name="TymakovLab" expanded="True">
               <Node name="Program.cs" selected="True" />
             </Node>
-            <Node name="TymakovLab" expanded="True" />
           </Node>
         </State>
       </Pad>

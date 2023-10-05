@@ -60,11 +60,20 @@ namespace HT
             " ###\n" +
             "   #\n" +
             " ## \n";
-           
+
+        static string[] SWEARS = { "ебан", "ёбан", "елбан", "ёблан", "ебат", "ёбат",
+             "хуй", "хуе", "гандон", "пизд", "сук", "суч", "чмо",
+             "жоп", "блят", "бля", "бляд", "хуя"};
+
         static void Message(string message, int number)
         {
             Console.WriteLine("\nLet's check problem #{0}\nThis program {1}\nPress any to continue...", number, message);
             Console.ReadKey();
+        }
+
+        static int ContainsCount(string str, string sub)
+        {
+            return (str.Length - str.Replace(sub, "").Length) / sub.Length;
         }
 
         // if positive flag is true input must be positive
@@ -131,11 +140,9 @@ namespace HT
                     Console.Write('.');
                 }
                 Timer timer = new Timer(Count, null, 0, 1000);
+                Console.WriteLine("!!!WRONG NUMBER OR COMMAND!!!");
                 Thread.Sleep(3000);
                 timer.Change(Timeout.Infinite, Timeout.Infinite);
-                Console.WriteLine();
-                Console.WriteLine("!!!WRONG NUMBER OR COMMAND!!!");
-                Thread.Sleep(1500);
                 Console.ResetColor();
                 Console.Clear();
         }
@@ -143,6 +150,41 @@ namespace HT
         static void Offer()
         {
             Console.Write("> ");
+        }
+
+        enum ScoldLevel
+        {
+            None,
+            Low,
+            Medeum,
+            Hard,
+            AverageDed
+        }
+
+        struct Ded
+        {
+            public string name;
+            public string[] swearWords;
+            public int blackEyes;
+            public ScoldLevel scoldLevel;
+
+            public Ded(string name, ScoldLevel scoldLevel, params string[] swearWords)
+            {
+                blackEyes = 0;
+                this.swearWords = swearWords;
+                this.name = name;
+                this.scoldLevel = scoldLevel;
+            }
+
+            static void setSwearWords(Ded ded, params string[] swearWords)
+            {
+                ded.swearWords = swearWords;
+            }
+
+            public void GetBlackEyes(int count)
+            {
+                blackEyes += count;
+            }
         }
 
         public static void Main(string[] args)
@@ -218,7 +260,7 @@ namespace HT
             void Problem2()
             {
                 Message("tests a function, that returns sum of array, returns (fer) its multiply" +
-                	"\nand returns (out) its average", 1);
+                	"\nand returns (out) its average", 2);
                 int multiply = 1;
                 Console.WriteLine($"The sum: {ArrayTools(ref multiply, out double average, 1, 2, 3, 4, 5, 6, 7, 8, 9)}, " +
                     $"multiply: {multiply}, average: {average}");
@@ -226,7 +268,7 @@ namespace HT
 
             void Problem3()
             {
-                Message("shows ASCII art of input digit", 1);
+                Message("shows ASCII art of input digit", 3);
                 bool term = true;
                 while (term)
                 {
@@ -254,6 +296,48 @@ namespace HT
                 Environment.Exit(0);
             }
 
+            void Problem4()
+            {
+                Message("Ccreates five different grumpy farts and granny punish them", 4);
+                /*
+                 * source of the swears: https://yadocent.livejournal.com/728988.html
+                 * Oh my god, please, forgive me for THIS...                
+                 */                
+                Ded[] dedyhanchiki =
+                {
+                    new Ded("Ilyusha", ScoldLevel.None, "дурак", "вонючка", "пися",
+                        "попа", "член", "тупой", "хрень", "сам такой", "линукс - лучшая ОС",
+                        "злые микрософты тупые каписалисты", "бляяяяяяяяяяяя..."),
+                    new Ded("Ivan", ScoldLevel.Low, "раньше было лучше", "хулиганье!!",
+                        "гниль...", "дегенератина", "ослина", "гандон"),
+                    new Ded("Mihail", ScoldLevel.Medeum, "дибил", "сука", "шваль",
+                        "помойная хуйня", "пиздолизина", "чмошник", "Бляди!"),
+                    new Ded("Grigoriy", ScoldLevel.Hard, "Хуев ты козолуп", "пиздин свинарь",
+                        "ебана гадюка", "пиздохлебатель на хуй вздетый",
+                        "Чтоб повылазили твои рачьи очи, растряси тебя хуеманка"),
+                    new Ded("V.A.S.I.L.I.Y.", ScoldLevel.AverageDed,
+                        "Ёбаный в рыло, токмо в жопу, в Бога душу мать, блядями высцаный, засраный хуедав моржовый",
+                        "пиздюк блошиный", "залуполиз пальцем деланный", "аршинная хуяка", "пиздобузина защемленная",
+                        "долбоебатина иноземная", "пиздоглист", "гнобилище разъёбанное до печенок")
+                };
+
+                int totalCount = 0;
+                foreach (Ded ded in dedyhanchiki)
+                {
+                    foreach (string str in ded.swearWords)
+                    {
+                        foreach(string swr in SWEARS)
+                        {
+                            int count = ContainsCount(str.ToLower(), swr);
+                            ded.GetBlackEyes(count);
+                            totalCount += count;
+                        }
+                    }
+                    Console.WriteLine($"{ded.name} has {ded.blackEyes} balck eyes..!");
+                }
+                Console.WriteLine($"The total count of the balck eyes is: {totalCount}");
+            }
+
             bool run = true;
             while (run)
             {
@@ -266,7 +350,7 @@ namespace HT
                     case "1": Problem1(); break;
                     case "2": Problem2(); break;
                     case "3": Problem3(); break;
-                    //case "4": Problem4(); break;
+                    case "4": Problem4(); break;
                     case "exit": run = false; break;
                     default: Console.WriteLine("This is not a command or a number of task"); break;
                 }
