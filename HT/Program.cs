@@ -129,8 +129,7 @@ namespace HT
             {
                 if (char.IsLetter(ch))
                 {
-                    34
-                        2throw new InvalidOperationException("There is no such case!");
+                    throw new InvalidOperationException("There is no such case!");
                 }
 
             }
